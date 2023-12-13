@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rethink Sans', sans-serif;
+}
+img, video{
+    display: block;
+    max-width: 100%;
+}
+.container{
+    background-color: #ddd;
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.container .sagüst{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .me{
+    margin: 22px;
+
+}
+.container .me2{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+div.buttonskew{
+    font-size: 22px;
+    padding: 25px 20px;
+}
+.buttonskew{
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.buttonskew::before{
+    content:'';
+    transition: 1s left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -120%;
+    z-index: -1;
+    transform: skew(10deg);
+    background-color:darkblue;
+    color: white;
+}
+.buttonskew:hover::before{
+    left: -30%;
+}
+.buttonskew:hover{
+    color: white;
+}
+
+table {
+    border: 2px solid #eee;
+    display: inline-flex;
+}
+table tr{
+    padding: 10px;
+}
+table tr td{
+    padding: 10px;
+}
+table th{
+    padding: 10px;
+}
+table:hover{
+    border-color: black;
+    transition: 0.5s border-color;
+}
+div.bb{
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 780px;
+    margin: 0;
+}
+p.p1{
+    margin: 0 0 0 18px;
+}
+div.bb2{
+    display: inline-flex;
+}
+p.p2{
+    margin: 20px 0 0 -10px;
+    line-height: 30px;
+}
+img{
+    width: 350px;
+    display: inline-flex;
+    margin: 20px;
+}
+img:hover{
+    filter: drop-shadow(0 0 20px navy);
+    transition: 1s filter;
+}
+
+.con{
+    width: 100%;
+    height: 80px;
+    background-color:darkblue;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color: white;
+}
+div.bir{
+    font-size: 25px;  
+    margin: 0 30px;
+}
+div.iki{
+    font-size: 20px;
+    padding: 30px;
+}
+div.uc{
+    font-size: 20px;
+    margin: 30px;
+}
